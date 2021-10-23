@@ -10,7 +10,7 @@
 
     <div class="go_to_gallery">
         <p>Découvrez la maison de vacance idéale pour votre séjour en martinique</p>
-        <button class="btn_style">Voir la galerie</button>
+        <button class="btn_style" @click="go_to_gallery">Découvrir la maison</button>
     </div>
 
     <p>La maison est située au sud de la Martinique</p>
@@ -24,9 +24,10 @@
     </div>
     <div>
        <p>Venez profiter de l'air Martiniquais toute l'année!</p>
-       <button class="btn_style btn_color_two"> Je vérifie les dates de disponibilité!</button>
+       <button class="btn_style btn_color_two" @click="go_to_agenda"> Je vérifie les dates de disponibilité!</button>
 
     </div>
+    <h2>Les avis clients:</h2>
    
 
 
@@ -41,6 +42,17 @@ export default {
   name: 'Home',
   components: {
     
+  },
+  methods:{
+    go_to_agenda(e){
+      e.preventDefault();
+      this.$router.push({path:'/Agenda'})
+    }, 
+    go_to_gallery(e){
+      e.preventDefault();
+      this.$router.push({path:'/Gallery'})
+    },
+
   }
 }
 </script>

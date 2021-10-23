@@ -1,5 +1,5 @@
 <template>
   <div class="about">
-    <h2>En savoir plus!</h2>
+    <h2>Pour réserver:</h2>
   </div>
 </template>

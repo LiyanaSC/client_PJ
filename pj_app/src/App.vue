@@ -1,12 +1,12 @@
 <template>
   <div id="app">
     <div id="nav">
-      <img class="" src="./assets/agenda.svg" alt="icone d'accès à l'agenda">
-      <img class="" src="./assets/image.svg" alt="icone d'accès à la galerie d'image">
+      <router-link to="/agenda"><img class="" src="./assets/agenda.svg" alt="icone d'accès à l'agenda"></router-link >
+      <router-link to="/gallery"><img class="" src="./assets/image.svg" alt="icone d'accès à la galerie d'image"></router-link >
       <router-link to="/"><img class="" src="./assets/home.svg" alt="icone d'accès à l'accueil"></router-link>
 
 
-      <img class="" src="./assets/contact.svg" alt="icone d'accès au formulaire de contact">
+      <router-link to="/contact"><img class="" src="./assets/contact.svg" alt="icone d'accès au formulaire de contact"></router-link >
       <router-link to="/about"><img class="info" src="./assets/information.svg" alt="icone d'accès à la partie à propos"></router-link>
     </div>
     <router-view/>
@@ -55,7 +55,7 @@
 .info{
   margin: 0px;
   padding: 4px;
-  border: 1px black solid;
+  border: 2px black solid;
   border-radius: 50%;
   height: 40px;
 }
