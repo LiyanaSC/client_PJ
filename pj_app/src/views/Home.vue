@@ -1,8 +1,7 @@
 <template>
   <div class="home">
-    
-    <img class="beach_pic" alt="Photo de la plage de Saint-Anne" src="../assets/plage.jpeg">
-    <div class="logo"><h1 class="two_rem">Chez <br/> Patricia et Joel</h1></div>
+   
+    <headerlogo/>
     <div class="text">
         <h2 class="two_rem">Maison en location saisonnière sur une île de rêve  </h2>
         <p>Découvrez la maison de vacance idéale pour votre séjour en martinique</p>
@@ -36,11 +35,13 @@
 </template>
 
 <script>
+import Headerlogo from '../components/Headerlogo.vue';
 // @ is an alias to /src
 
 export default {
   name: 'Home',
   components: {
+    Headerlogo
     
   },
   methods:{
@@ -67,32 +68,8 @@ export default {
   justify-content: center;
   align-items: center;
 }
-.beach_pic{
-height: 200px;
-overflow: hidden;
-width: 100%;
-object-fit: cover;
-margin: 0%;
-object-position: center;  
-}
-.logo{
- 
-  position: absolute;
-  top: 100px;
-  border-radius: 50%;
- background-color: skyblue;
- height: 200px;
- width: 200px;
- border:5px #fff solid;
- display: flex;
- justify-content: center;
- align-items: center;
- font-family: 'Dancing Script', cursive;
 
-color: #fff;
-}
 .text{
-  margin-top: 100px;
   font-weight: bold;
 }
 .two_rem{

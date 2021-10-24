@@ -1,5 +1,6 @@
 <template>
-    <div>
+    <section class="gallery">
+        <headerlogo/>
         <h2>La Maison de Patricia et Joel</h2>
 
          <ul>
@@ -16,5 +17,38 @@
 
         <p>Située au bourg de Sainte-Anne, la maison vous offre toutes les commodités nécessaires à un bon séjour 😎 <br/>proximité avec la plage🏖️, les restaurants🍴, etc...</p>
        
-    </div>
+       <h2>Les photos:</h2>
+        <pics txt=" Le salon" :url="require('@/assets/salon.jpeg')"/>
+       <pics txt="Le salon" :url="require('@/assets/salon2.jpg')"/>
+       <pics txt="La chambre orange" :url="require('@/assets/chambreorange.jpg')"/>
+       <pics txt="La chambre verte" :url="require('@/assets/chambreverte.jpg')"/>
+       <pics txt="La chambre bleu" :url="require('@/assets/Chambrebleu.jpg')"/>
+       <pics txt="La cuisine" :url="require('@/assets/cuisine.jpg')"/>
+       <pics txt="La cuisine" :url="require('@/assets/cuisine2.jpg')"/>
+
+
+
+       <pics txt="Plage de" :url="require('@/assets/plage2.jpeg')"/>
+       <pics txt="Plage de" :url="require('@/assets/plage.jpeg')"/>
+    </section>
 </template>
+
+<script>
+import Headerlogo from '../components/Headerlogo.vue'
+import Pics from '../components/Pics.vue'
+export default {
+  components: { Headerlogo, Pics },
+    setup() {
+        
+    },
+}
+</script>
+
+<style lang="scss" scoped>
+.gallery{
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+</style>
