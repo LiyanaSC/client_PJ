@@ -1,6 +1,7 @@
 <template>
     <section class="gallery">
         <headerlogo/>
+        
         <h2>La Maison de Patricia et Joel</h2>
 
          <ul>

@@ -47,4 +47,7 @@ object-position: center;
 
 color: #fff;
 }
+.two_rem{
+   font-size: 2rem;
+}
 </style>
