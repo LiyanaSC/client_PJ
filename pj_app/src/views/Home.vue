@@ -18,7 +18,7 @@
     <div class="go_to_contact">
       <div class="caption">
         <p>Faite le pleins de souvenirs en réservant une maison qui vous plonge au coeur de la Martinique</p>
-        <button class="btn_style">Je veux réserver</button>
+        <button class="btn_style"  @click="go_to_contact">Je veux réserver</button>
       </div>
     </div>
     <div>
@@ -52,6 +52,10 @@ export default {
     go_to_gallery(e){
       e.preventDefault();
       this.$router.push({path:'/Gallery'})
+    },
+    go_to_contact(e){
+      e.preventDefault();
+      this.$router.push({path:'/Contact'})
     },
 
   }
