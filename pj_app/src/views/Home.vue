@@ -4,16 +4,15 @@
     <headerlogo/>
     <div class="text">
         <h2 class="two_rem">Maison en location saisonnière sur une île de rêve  </h2>
-        <p>Découvrez la maison de vacance idéale pour votre séjour en martinique</p>
+        <p>Située au sud de la Martinique dans la jolie commune de Sainte-Anne</p>
     </div>
 
     <div class="go_to_gallery">
-        <p>Découvrez la maison de vacance idéale pour votre séjour en martinique</p>
+        <p>Découvrez la maison de vacance idéale pour votre séjour</p>
         <button class="btn_style" @click="go_to_gallery">Découvrir la maison</button>
     </div>
 
-    <p>La maison est située au sud de la Martinique</p>
-    <p>Au plein coeur du bourg de Sainte-Anne, profitez de toutes les commodité et de notre belle plage à 5 min de marche à pied🚶🏻‍♀️</p>
+    <p>Au plein coeur du bourg de Sainte-Anne, <br/> profitez de toutes les commodité et de notre belle plage à 5 min de marche à pied🚶🏻‍♀️</p>
 
     <div class="go_to_contact">
       <div class="caption">

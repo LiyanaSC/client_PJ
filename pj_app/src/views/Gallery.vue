@@ -1,12 +1,14 @@
 <template>
     <section class="gallery">
         <headerlogo/>
+        <img src="../assets/geo.svg" alt="icone de geolocalisation" style="height:50px">
+        <p class="adress">8 cité des flamboyants <br/> 97227 Sainte-Anne</p>
         
-        <h2>La Maison de Patricia et Joel</h2>
+        <h2>Les équipements:</h2>
 
          <ul>
           <li>1 salle à manger aménagée</li>
-          <li>1 cuisine équipée</li>
+          <li>1 cuisine équipée ouverte sur le salon</li>
           <li>1 salle de bain avec WC</li>
           <li>1 WC indépendant</li>
           <li>1 véranda aménagé (petit salon,table,hamac)</li>
@@ -19,12 +21,12 @@
         <p>Située au bourg de Sainte-Anne, la maison vous offre toutes les commodités nécessaires à un bon séjour 😎 <br/>proximité avec la plage🏖️, les restaurants🍴, etc...</p>
        
        <h2>Les photos:</h2>
-        <pics txt=" Le salon" :url="require('@/assets/salon.jpeg')"/>
        <pics txt="Le salon" :url="require('@/assets/salon2.jpg')"/>
        <pics txt="La chambre orange" :url="require('@/assets/chambreorange.jpg')"/>
        <pics txt="La chambre verte" :url="require('@/assets/chambreverte.jpg')"/>
        <pics txt="La chambre bleu" :url="require('@/assets/Chambrebleu.jpg')"/>
-       <pics txt="La cuisine" :url="require('@/assets/cuisine.jpg')"/>
+      
+       <pics txt="La cuisine" :url="require('@/assets/cuisine.jpg')" />
        <pics txt="La cuisine" :url="require('@/assets/cuisine2.jpg')"/>
 
 
@@ -52,4 +54,12 @@ export default {
     flex-direction: column;
     align-items: center;
 }
+.adress{
+    font-size: 2rem;
+    font-weight: bold;
+}
+ul{
+    list-style: none;
+}
+
 </style>

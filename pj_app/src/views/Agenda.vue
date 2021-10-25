@@ -21,10 +21,12 @@ export default {
 
 <style lang="scss" scoped>
 .agenda{
+    //color: #fe6bb5;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 150px;
     &__box{
         width: 100%;
         height: 500px;
