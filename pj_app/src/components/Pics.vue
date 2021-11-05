@@ -1,6 +1,6 @@
 <template>
     <div class="shadow">
-        <img class="pic" :src="url" :alt="alt">
+        <img class="pic" :src="url" :alt="txt">
         <p class="txt">{{ txt }}</p>
 
     </div>
@@ -11,7 +11,6 @@ export default {
   name: 'Pics',
   props: {
       url: String,
-    alt: String,
     txt: String
   }
 }
@@ -27,12 +26,17 @@ export default {
     justify-content: space-around;
     align-items: center;
     margin: 15px;
+     @media screen and (min-width: 900px) {
+        width: 25%;
+  
+    }
 }
 .pic{
     width: 90%;
     height: 70%;
     object-fit: cover;
     object-position: bottom;  
+   
 
 }
 .txt{

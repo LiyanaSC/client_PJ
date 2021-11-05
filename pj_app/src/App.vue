@@ -1,17 +1,31 @@
 <template>
   <div id="app">
+
     <div id="nav">
-      <router-link to="/agenda"><img class="" src="./assets/agenda.svg" alt="icone d'accès à l'agenda"></router-link >
-      <router-link to="/gallery"><img class="" src="./assets/image.svg" alt="icone d'accès à la galerie d'image"></router-link >
-      <router-link to="/"><img class="" src="./assets/home.svg" alt="icone d'accès à l'accueil"></router-link>
+      <router-link to="/"><img class="icon_menu home" src="./assets/home.svg" alt="icone d'accès à l'accueil"><p class="text_menu">Accueuil </p></router-link>
+
+      <router-link to="/agenda"><img class="icon_menu" src="./assets/agenda.svg" alt="icone d'accès à l'agenda"><p class="text_menu">Agenda </p></router-link >
+      <router-link to="/gallery"><img class="icon_menu" src="./assets/image.svg" alt="icone d'accès à la galerie d'image"><p class="text_menu">Gallerie </p></router-link >
 
 
-      <router-link to="/contact"><img class="" src="./assets/contact.svg" alt="icone d'accès au formulaire de contact"></router-link >
-      <router-link to="/about"><img class="info" src="./assets/information.svg" alt="icone d'accès à la partie à propos"></router-link>
+      <router-link to="/contact"><img class="icon_menu" src="./assets/contact.svg" alt="icone d'accès au formulaire de contact"><p class="text_menu">Réserver </p></router-link >
+      <router-link to="/about"><img class="icon_menu info" src="./assets/information.svg" alt="icone d'accès à la partie à propos"><p class="text_menu">À propos</p></router-link>
     </div>
+     <Headerlogo/>
+
     <router-view/>
   </div>
 </template>
+
+<script>
+import Headerlogo from './components/Headerlogo.vue'
+export default {
+  components: { Headerlogo },
+  setup() {
+    
+  },
+}
+</script>
 
 <style lang="scss">
 #app {
@@ -28,6 +42,7 @@
   position: fixed;
   bottom: 0px;
   display: flex;
+  flex-direction: row;
   width: 100%;
   justify-content: space-around;
   align-items: center;
@@ -37,20 +52,77 @@
   height: 100px;
   max-height: 100px;
   z-index: 10;
-
+  @media screen and (min-width: 900px) {
+    position: relative;
+    border: none;
+    justify-content: right;
+    
+  }
  
   a {
+     text-decoration: none;
     font-weight: bold;
     color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+    @media screen and (min-width: 900px) {
+        position: relative;
+        border: none;
+        justify-content: right;
+         &.router-link-exact-active {
+            color: palevioletred;
+            border-bottom: 2px palevioletred solid;
+          }
+        &:hover{
+                     color: palevioletred;
+ 
+        }
+      }
+   
   }
   img{
     max-height: 50px;
   }
   
+}
+.icon_menu{
+  @media screen and (min-width: 900px) {
+    display: none;
+  }
+}
+#nav :nth-child(1) { 
+  @media screen and (max-width: 899px) {
+  order: 3; 
+  }
+  }
+#nav :nth-child(2) { 
+  @media screen and (max-width: 899px) {
+  order: 1; 
+  }
+  }  
+#nav :nth-child(3) { 
+  @media screen and (max-width: 899px) {
+  order: 2; 
+  }
+  }
+#nav :nth-child(4) { 
+  @media screen and (max-width: 899px) {
+  order: 4; 
+  }
+  }
+#nav :nth-child(5) { 
+  @media screen and (max-width: 899px) {
+  order: 5; 
+  }
+  }
+
+.text_menu{
+  display: none;
+@media screen and (min-width: 900px) {
+    display: initial;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    margin-left: 10px;
+   
+  }
 }
 .info{
   margin: 0px;

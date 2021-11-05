@@ -1,6 +1,5 @@
 <template>
     <section class="gallery">
-        <headerlogo/>
         <img src="../assets/geo.svg" alt="icone de geolocalisation" style="height:50px">
         <p class="adress">8 cité des flamboyants <br/> 97227 Sainte-Anne</p>
         
@@ -21,26 +20,28 @@
         <p>Située au bourg de Sainte-Anne, la maison vous offre toutes les commodités nécessaires à un bon séjour 😎 <br/>proximité avec la plage🏖️, les restaurants🍴, etc...</p>
        
        <h2>Les photos:</h2>
-       <pics txt="Le salon" :url="require('@/assets/salon2.jpg')"/>
-       <pics txt="La chambre orange" :url="require('@/assets/chambreorange.jpg')"/>
-       <pics txt="La chambre verte" :url="require('@/assets/chambreverte.jpg')"/>
-       <pics txt="La chambre bleu" :url="require('@/assets/Chambrebleu.jpg')"/>
-      
-       <pics txt="La cuisine" :url="require('@/assets/cuisine.jpg')" />
-       <pics txt="La cuisine" :url="require('@/assets/cuisine2.jpg')"/>
+       <div class="pics_box">
+                <pics txt="Le salon" :url="require('@/assets/salon2.jpg')"/>
+            <pics txt="La chambre orange" :url="require('@/assets/chambreorange.jpg')"/>
+            <pics txt="La chambre verte" :url="require('@/assets/chambreverte.jpg')"/>
+            <pics txt="La chambre bleu" :url="require('@/assets/Chambrebleu.jpg')"/>
+            
+            <pics txt="La cuisine" :url="require('@/assets/cuisine.jpg')" />
+            <pics txt="La cuisine" :url="require('@/assets/cuisine2.jpg')"/>
 
 
 
-       <pics txt="Plage de" :url="require('@/assets/plage2.jpeg')"/>
-       <pics txt="Plage de" :url="require('@/assets/plage.jpeg')"/>
+            <pics txt="Plage de" :url="require('@/assets/plage2.jpeg')"/>
+            <pics txt="Plage de" :url="require('@/assets/plage.jpeg')"/>
+       </div>
+
     </section>
 </template>
 
 <script>
-import Headerlogo from '../components/Headerlogo.vue'
 import Pics from '../components/Pics.vue'
 export default {
-  components: { Headerlogo, Pics },
+  components: { Pics },
     setup() {
         
     },
@@ -61,5 +62,10 @@ export default {
 ul{
     list-style: none;
 }
-
+.pics_box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 </style>
