@@ -1,7 +1,7 @@
 <template>
     <section class="gallery">
-        <img src="../assets/geo.svg" alt="icone de geolocalisation" style="height:50px">
-        <p class="adress">8 cité des flamboyants <br/> 97227 Sainte-Anne</p>
+        <a  href="https://www.google.com/maps/place/14°25'58.5%22N+60°52'54.2%22W/@14.432922,-60.8839069,967m/data=!3m1!1e3!4m5!3m4!1s0x0:0x2e7bbe0a60d172a6!8m2!3d14.432922!4d-60.8817182?hl=fr" target="_blank"><img src="../assets/geo.svg" alt="icone de geolocalisation" style="height:50px"></a>
+       <a  href="https://www.google.com/maps/place/14°25'58.5%22N+60°52'54.2%22W/@14.432922,-60.8839069,967m/data=!3m1!1e3!4m5!3m4!1s0x0:0x2e7bbe0a60d172a6!8m2!3d14.432922!4d-60.8817182?hl=fr" target="_blank"> <p class="adress">8 cité des flamboyants <br/> 97227 Sainte-Anne</p></a>
         
         <h2>Les équipements:</h2>
 
@@ -31,8 +31,8 @@
 
 
 
-            <pics txt="Plage de" :url="require('@/assets/plage2.jpeg')"/>
-            <pics txt="Plage de" :url="require('@/assets/plage.jpeg')"/>
+            <pics txt="Plage Anse Tonnoir" :url="require('@/assets/plage2.jpeg')"/>
+            <pics txt="Plage Anse Tonnoir" :url="require('@/assets/plage.jpeg')"/>
        </div>
 
     </section>
@@ -67,5 +67,13 @@ ul{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+a{
+     text-decoration: none;
+     color: black;
+        &:hover{
+        
+            color: rgb(91, 182, 218);
+        }
 }
 </style>

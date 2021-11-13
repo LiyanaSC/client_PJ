@@ -11,27 +11,53 @@
         <button class="btn_style" @click="go_to_gallery">Découvrir la maison</button>
     </div>
 
-    <p class="big_screen_size">
-      Au plein coeur du bourg de Sainte-Anne, 
-      <br/> profitez de toutes les commodité et de notre belle plage à 5 min de marche à pied🚶🏻‍♀️
-      <br/>Patricia et Joel vous accueilleront dans une maison de vacance idéale de part
-      <br/>sa position géographique qui vous offre le plaisir de profiter de la Plage🏖️
+    <div class="big_screen_size">
+     <h3>Au plein coeur du bourg de Sainte-Anne</h3> 
+      <h4>🏠 Logement entier</h4>
+      <p>  
+        <br/>Patricia et Joel vous accueilleront dans une maison de vacance idéale de part
+        <br/>sa position géographique qui vous offre le plaisir de profiter de la Plage🏖️
+      </p>
+
+      <h4>📍 Idéalement situé</h4>
+      <p>
+      <br/> profitez de toutes les commodités et de notre belle plage à 5 min de marche à pied🚶🏻‍♀️
+    
       <br/>que de sa proximité avec tout un tas de commodités!🍽️
       <br/>Ici le slogan c'est manger, nager🏊🏽‍♀️
-    </p>
+      </p>
+
+     
+      
+    </div>
 
     <div class="go_to_contact">
       <div class="caption">
-        <p>Faite le pleins de souvenirs en réservant une maison qui vous plonge au coeur de la Martinique</p>
+        <p>Faites le pleins de souvenirs en réservant une maison qui vous plonge au coeur de la Martinique</p>
         <button class="btn_style"  @click="go_to_contact">Je veux réserver</button>
       </div>
     </div>
     <div class="go_to_agenda">
-       <p>Venez profiter de l'air Martiniquais toute l'année!</p>
+      <div>
+        <h2>Tarifs:</h2>
+        <p>
+          <br/> 1 chambre: weekend 200€ / semaine 350€
+          <br/> 2 chambre: weekend 325€ / semaine 500€
+          <br/> 1 chambre: weekend 400€ / semaine 700€
+      
+        </p>
+      </div>
+      <div>
+       <h3>Venez profiter de l'air Martiniquais toute l'année!</h3>
        <button class="btn_style btn_color_two" @click="go_to_agenda"> Je vérifie les dates de disponibilité!</button>
 
+      </div>
+
     </div>
-    <h2 class="customer">Les avis clients:</h2>
+
+    
+    
+   <h2 class="customer">Très bientôt nos avis clients!</h2> 
    
 
 
@@ -52,17 +78,21 @@ export default {
     go_to_agenda(e){
       e.preventDefault();
       this.$router.push({path:'/Agenda'})
+       window.scrollTo(0,0);
     }, 
     go_to_gallery(e){
       e.preventDefault();
       this.$router.push({path:'/Gallery'})
+       window.scrollTo(0,0);
     },
     go_to_contact(e){
       e.preventDefault();
       this.$router.push({path:'/Contact'})
+       window.scrollTo(0,0);
     },
 
-  }
+  },
+
 }
 </script>
 <style lang="scss" scoped>
@@ -81,6 +111,7 @@ export default {
     justify-content: space-around;
   
     }
+  
    
     
     
@@ -157,7 +188,7 @@ export default {
     flex-direction: column;
     box-shadow: 1px 2px 2px gray;
     margin-bottom: 100Px;
-    order:6;
+  
     align-items: start;
     justify-content: center;
     }
@@ -166,8 +197,11 @@ export default {
 .go_to_agenda{
   margin-bottom: 50px;
 @media screen and (min-width: 900px) {
-      order:5;
+  width: 100%;
+display: flex;
+justify-content: space-around;
   margin-bottom: 0px;
+  align-items: center;
     }
 }
 
@@ -182,30 +216,15 @@ export default {
   margin-left: 50px;
 }
 
-.btn_style{
-  border: none;
-  border-radius: 25px 25px 25px 25px ;
-  height: 50px;
-  background-color: palevioletred;
-  color: #fff;
-  font-weight: bold;
-  padding-left:15px;
-  padding-right: 15px;
-  &:hover{
-    box-shadow: 1px 1px 5px rgb(0, 0, 0);
-  }
-  &:active{
-    box-shadow: 2px 2px 5px rgb(0, 0, 0);
-  }
 
-}
 .btn_color_two{
 background-color:rgb(91, 182, 218) ;
 }
 .customer{
     @media screen and (min-width: 900px) {
-      order:7;
+     
       width: 90%;
+      margin-top: 100px;
   
     }
 
@@ -213,7 +232,22 @@ background-color:rgb(91, 182, 218) ;
 .big_screen_size{
 @media screen and (min-width: 900px) {
      width: 50%;
-  
+  margin-bottom: 30px;
+  text-align: left;
+display: flex;
+flex-direction: column;
+ & :nth-child(n){
+   margin:0%;
+ }
+ & :nth-child(1){
+   margin-bottom: 20px;
+ }
+ & :nth-child(3){
+   margin-bottom: 20px;
+ }
+ & :nth-child(5){
+   margin-bottom: 20px;
+ }
     }
 }
 </style>

@@ -2,14 +2,14 @@
   <div id="app">
 
     <div id="nav">
-      <router-link to="/"><img class="icon_menu home" src="./assets/home.svg" alt="icone d'accès à l'accueil"><p class="text_menu">Accueuil </p></router-link>
+      <router-link to="/" @click.native="scrollToTop"><img class="icon_menu home" src="./assets/home.svg" alt="icone d'accès à l'accueil"><p class="text_menu">Accueil </p></router-link>
 
-      <router-link to="/agenda"><img class="icon_menu" src="./assets/agenda.svg" alt="icone d'accès à l'agenda"><p class="text_menu">Agenda </p></router-link >
-      <router-link to="/gallery"><img class="icon_menu" src="./assets/image.svg" alt="icone d'accès à la galerie d'image"><p class="text_menu">Gallerie </p></router-link >
+      <router-link to="/agenda" @click.native="scrollToTop"><img class="icon_menu" src="./assets/agenda.svg" alt="icone d'accès à l'agenda"><p class="text_menu">Agenda </p></router-link >
+      <router-link to="/gallery" @click.native="scrollToTop"><img class="icon_menu" src="./assets/image.svg" alt="icone d'accès à la galerie d'image"><p class="text_menu">Galerie </p></router-link >
 
 
-      <router-link to="/contact"><img class="icon_menu" src="./assets/contact.svg" alt="icone d'accès au formulaire de contact"><p class="text_menu">Réserver </p></router-link >
-      <router-link to="/about"><img class="icon_menu info" src="./assets/information.svg" alt="icone d'accès à la partie à propos"><p class="text_menu">À propos</p></router-link>
+      <router-link to="/contact" @click.native="scrollToTop"><img class="icon_menu" src="./assets/contact.svg" alt="icone d'accès au formulaire de contact"><p class="text_menu">Réserver </p></router-link >
+      <router-link to="/about" @click.native="scrollToTop"><img class="icon_menu info" src="./assets/information.svg" alt="icone d'accès à la partie à propos"><p class="text_menu">À propos</p></router-link>
     </div>
      <Headerlogo/>
 
@@ -24,6 +24,11 @@ export default {
   setup() {
     
   },
+  methods:{
+     scrollToTop() {
+                window.scrollTo(0,0);
+           }
+  }
 }
 </script>
 
@@ -130,5 +135,35 @@ export default {
   border: 2px black solid;
   border-radius: 50%;
   height: 40px;
+}
+.btn_style{
+  border: none;
+  border-radius: 25px 25px 25px 25px ;
+  height: 50px;
+  background-color: palevioletred;
+  color: #fff;
+  font-weight: bold;
+  padding-left:15px;
+  padding-right: 15px;
+      box-shadow: 1px 1px 2px grey;
+
+  &:hover{
+    box-shadow: 1px 1px 5px rgb(0, 0, 0);
+  }
+  &:active{
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+  }
+
+}
+.btn_color_two{
+background-color:rgb(91, 182, 218) ;
+}
+.customer{
+    @media screen and (min-width: 900px) {
+      order:7;
+      width: 90%;
+  
+    }
+
 }
 </style>
