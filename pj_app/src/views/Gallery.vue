@@ -7,6 +7,7 @@
 
          <ul>
           <li>1 salle à manger aménagée</li>
+          <li>3 chambres avec espace de rangement</li>
           <li>1 cuisine équipée ouverte sur le salon</li>
           <li>1 salle de bain avec WC</li>
           <li>1 WC indépendant</li>
