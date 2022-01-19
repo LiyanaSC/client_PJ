@@ -2,7 +2,7 @@
     <section class="gallery">
         <a  href="https://www.google.com/maps/place/14°25'58.5%22N+60°52'54.2%22W/@14.432922,-60.8839069,967m/data=!3m1!1e3!4m5!3m4!1s0x0:0x2e7bbe0a60d172a6!8m2!3d14.432922!4d-60.8817182?hl=fr" target="_blank"><img src="../assets/geo.svg" alt="icone de geolocalisation" style="height:50px"></a>
        <a  href="https://www.google.com/maps/place/14°25'58.5%22N+60°52'54.2%22W/@14.432922,-60.8839069,967m/data=!3m1!1e3!4m5!3m4!1s0x0:0x2e7bbe0a60d172a6!8m2!3d14.432922!4d-60.8817182?hl=fr" target="_blank"> <p class="adress">8 cité des flamboyants <br/> 97227 Sainte-Anne</p></a>
-        
+        <a class="btn_style link" href="https://www.google.com/maps/place/14°25'58.5%22N+60°52'54.2%22W/@14.432922,-60.8839069,967m/data=!3m1!1e3!4m5!3m4!1s0x0:0x2e7bbe0a60d172a6!8m2!3d14.432922!4d-60.8817182?hl=fr" target="_blank"><p>Voir sur Maps</p></a>
         <h2>Les équipements:</h2>
 
          <ul>
@@ -43,9 +43,7 @@
 import Pics from '../components/Pics.vue'
 export default {
   components: { Pics },
-    setup() {
-        
-    },
+    
 }
 </script>
 
@@ -76,5 +74,15 @@ a{
         
             color: rgb(91, 182, 218);
         }
+}
+.link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+        
+            color: black;
+        }
+    margin-bottom: 50px;
 }
 </style>

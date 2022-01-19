@@ -42,8 +42,8 @@
         <h2>Tarifs:</h2>
         <p>
           <br/> 1 chambre: weekend 200€ / semaine 350€
-          <br/> 2 chambre: weekend 325€ / semaine 500€
-          <br/> 1 chambre: weekend 400€ / semaine 700€
+          <br/> 2 chambres: weekend 325€ / semaine 500€
+          <br/> 3 chambres: weekend 400€ / semaine 700€
       
         </p>
       </div>
