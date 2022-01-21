@@ -8,6 +8,8 @@
 
 
       </div>
+      <button class="btn_style btn_color_two" @click="go_to_contact">Réserver!</button>
+
     </div>
 </template>
 
@@ -20,6 +22,11 @@ export default {
        }
    },
    methods:{
+     go_to_contact(e){
+      e.preventDefault();
+      this.$router.push({path:'/Contact'})
+       window.scrollTo(0,0);
+    },
       
    },
     mounted(){

@@ -6,9 +6,7 @@
         <p>Située au sud de la Martinique dans la jolie commune de Sainte-Anne</p>
     </div>
 
-    <div class="go_to_gallery">
-        <p>Découvrez la maison de vacance idéale pour votre séjour</p>
-        <button class="btn_style" @click="go_to_gallery">Découvrir la maison</button>
+    <div class="first_deco"> 
     </div>
 
     <div class="big_screen_size">
@@ -31,12 +29,44 @@
       
     </div>
 
+  
+    <div class="revert_small_screen">
+
+            <div class="text_beside_deco">
+            <p>Découvrez la maison de vacance idéale pour votre séjour</p>
+              <button class="btn_style" @click="go_to_gallery">Découvrir la maison</button>
+          </div>
+
+          <div class="second_deco"> 
+    </div>
+    </div>
+
+      <div class="third_deco"> 
+       </div>
+
+      <div class="text_beside_deco">
+        <h3>Venez profiter de l'air Martiniquais toute l'année!</h3>
+        <button class="btn_style btn_color_two" @click="go_to_agenda"> Je vérifie les dates de disponibilité!</button>
+
+      </div>
+    
+    
+
+        <div class="clients">
+     <h2 class="customer">Nos avis clients:</h2> 
+      <note name="Liyana" title="Un coin de Paradis" txt="Le site ne reflète même pas le confort et le bien être dont on bénéficie dans ce petit coin de paradis, j'ai passé un séjour (Trop court!) et que ce soit la douche extérieur trop pratique après la plage, le hamac, la douche à l'italienne, la proximité de tout, etc... On oublie le COVID, on est serein! On a tout à quelque pas. Vraiment un très grand plaisir! J'ai adoré, j'y reviendrai. Merci à Patricia et Joël des personnes très gentilles." />
+  
+    </div>
+
     <div class="go_to_contact">
       <div class="caption">
         <p>Faites le pleins de souvenirs en réservant une maison qui vous plonge au coeur de la Martinique</p>
         <button class="btn_style"  @click="go_to_contact">Je veux réserver</button>
       </div>
     </div>
+
+
+    
     <div class="go_to_agenda">
       <div>
         <h2>Tarifs:</h2>
@@ -47,30 +77,25 @@
       
         </p>
       </div>
-      <div>
-       <h3>Venez profiter de l'air Martiniquais toute l'année!</h3>
-       <button class="btn_style btn_color_two" @click="go_to_agenda"> Je vérifie les dates de disponibilité!</button>
 
-      </div>
 
     </div>
 
     
-    
-   <h2 class="customer">Très bientôt nos avis clients!</h2> 
-   
 
+ 
 
-  
   </div>
 </template>
 
 <script>
+import Note from '../components/Note.vue';
 // @ is an alias to /src
 
 export default {
   name: 'Home',
   components: {
+    Note
     
     
   },
@@ -108,7 +133,6 @@ export default {
       @media screen and (min-width: 900px) {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
   
     }
   
@@ -134,35 +158,93 @@ export default {
    font-size: 2rem;
 }
 
-.go_to_gallery{
-  position: relative;
+.first_deco{
   margin: 0%;
+  height: 400px;
   width: 100%;
-  height: 300px;
-  background-image: url("../assets/go_to2.jpg");
+  background-image: url("../assets/hamac1.jpg");
   background-size: cover;
   background-position: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-   color: #fff;
   font-weight: bold;
   text-shadow: 1px 2px 2px gray;
-  font-size: 1.5rem;
-    margin-bottom: 50px;
+
     @media screen and (min-width: 900px) {
       
     margin-top: 50px;
-    width: 40%;
+    height: 400px;
+    width: 50%;
     flex-direction: column;
-    box-shadow: 1px 2px 2px gray;
-    margin-bottom: 100Px;
 
     }
+}
+.revert_small_screen{
+margin: 0%;
+padding:0%;
+width: 100%;
+display: flex;
+flex-direction: column-reverse;
 
+    @media screen and (min-width: 900px) {
+      
    
+    flex-direction: row;
 
+    }
+}
+.second_deco{
+   margin: 0%;
+  height: 400px;
+  width: 100%;
+  background-image: url("../assets/go_to2.jpg");
+  background-size: cover;
+  background-position: center;
+  font-weight: bold;
+  text-shadow: 1px 2px 2px gray;
+
+    @media screen and (min-width: 900px) {
+      
+  
+    height: 400px;
+    width: 50%;
+    flex-direction: column;
+
+    }
+}
+.third_deco{
+ margin: 0%;
+  height: 400px;
+  width: 100%;
+  background-image: url("../assets/plage3.jpg");
+  background-size: cover;
+  background-position: center;
+  font-weight: bold;
+  text-shadow: 1px 2px 2px gray;
+
+    @media screen and (min-width: 900px) {
+      
+  
+    height: 400px;
+    width: 50%;
+    flex-direction: column;
+
+    }
+}
+.text_beside_deco{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+     flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+
+   @media screen and (min-width: 900px) {
+      
+  
+    height: 400px;
+    max-width: 50%;
+ margin-bottom: 0px;
+
+    }
 }
 
 
@@ -220,6 +302,18 @@ justify-content: space-around;
 .btn_color_two{
 background-color:rgb(91, 182, 218) ;
 }
+.clients{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   @media screen and (min-width: 900px) {
+      
+   
+    flex-direction: column-reverse;
+
+    }
+}
 .customer{
     @media screen and (min-width: 900px) {
      
@@ -231,23 +325,25 @@ background-color:rgb(91, 182, 218) ;
 }
 .big_screen_size{
 @media screen and (min-width: 900px) {
-     width: 50%;
+  width: 50%;
   margin-bottom: 30px;
   text-align: left;
-display: flex;
-flex-direction: column;
- & :nth-child(n){
-   margin:0%;
- }
- & :nth-child(1){
-   margin-bottom: 20px;
- }
- & :nth-child(3){
-   margin-bottom: 20px;
- }
- & :nth-child(5){
-   margin-bottom: 20px;
- }
-    }
+  box-sizing: border-box;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  & :nth-child(n){
+    margin:0%;
+  }
+  & :nth-child(1){
+    margin-bottom: 20px;
+  }
+  & :nth-child(3){
+    margin-bottom: 20px;
+  }
+  & :nth-child(5){
+    margin-bottom: 20px;
+  }
+      }
 }
 </style>

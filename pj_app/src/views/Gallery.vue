@@ -30,10 +30,37 @@
             <pics txt="La cuisine" :url="require('@/assets/cuisine.jpg')" />
             <pics txt="La cuisine" :url="require('@/assets/cuisine2.jpg')"/>
 
-
+            <pics txt="La mascotte de la maison" :url="require('@/assets/mascotte1.jpg')"/>
+            <pics txt="La mascotte de la maison" :url="require('@/assets/mascotte2.jpg')"/>
 
             <pics txt="Plage Anse Tonnoir" :url="require('@/assets/plage2.jpeg')"/>
             <pics txt="Plage Anse Tonnoir" :url="require('@/assets/plage.jpeg')"/>
+            
+            <pics txt="Les jolis points de vue" :url="require('@/assets/vue1.jpg')"/>
+            <pics txt="Les jolis points de vue" :url="require('@/assets/vue2.jpg')"/>            
+            <pics txt="Les jolis points de vue" :url="require('@/assets/vue3.jpg')"/>
+            <pics txt="Les jolis points de vue" :url="require('@/assets/vue4.jpg')"/>
+            <pics txt="Les jolis points de vue" :url="require('@/assets/vue5.jpg')"/>
+            <pics txt="Les jolis points de vue" :url="require('@/assets/vue6.jpg')"/>
+            <pics txt="Les jolis points de vue" :url="require('@/assets/place1.jpg')"/>
+
+
+            <pics txt="Activité de plongée" :url="require('@/assets/plonge2.jpg')"/>
+            <pics txt="Activité de plongée" :url="require('@/assets/plonge1.jpg')"/>
+
+            <pics txt="Jardin d'enfant" :url="require('@/assets/enfant1.jpg')"/>
+            <pics txt="Jardin d'enfant" :url="require('@/assets/enfant2.jpg')"/>
+            <pics txt="jeux d'enfant" :url="require('@/assets/enfant3.jpg')"/>
+
+            <pics txt="Balade dans le bourg: L'église" :url="require('@/assets/eglise1.jpg')"/>
+            <pics txt="Balade dans le bourg: L'église" :url="require('@/assets/eglise2.jpg')"/>
+            <pics txt="Balade dans le bourg: Commerce" :url="require('@/assets/commerce1.jpg')"/>
+            <pics txt="Balade dans le bourg: Commerce" :url="require('@/assets/commerce2.jpg')"/>
+            <pics txt="Balade dans le bourg: Restaurant" :url="require('@/assets/restaurant1.jpg')"/>
+            <pics txt="Balade dans le bourg: Restaurant" :url="require('@/assets/restaurant2.jpg')"/>
+            <pics txt="Balade dans le bourg: Le marché" :url="require('@/assets/marche1.jpg')"/>
+
+            
        </div>
 
     </section>

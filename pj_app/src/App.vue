@@ -145,7 +145,9 @@ export default {
   font-weight: bold;
   padding-left:15px;
   padding-right: 15px;
-      box-shadow: 1px 1px 2px grey;
+  box-shadow: 1px 1px 2px grey;
+  width: 50%;
+
 
   &:hover{
     box-shadow: 1px 1px 5px rgb(0, 0, 0);
