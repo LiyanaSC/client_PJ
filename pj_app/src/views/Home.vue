@@ -13,15 +13,15 @@
      <h3>Au plein coeur du bourg de Sainte-Anne</h3> 
       <h4>🏠 Logement entier</h4>
       <p>  
-        <br/>Patricia et Joel vous accueilleront dans une maison de vacance idéale de part
-        <br/>sa position géographique qui vous offre le plaisir de profiter de la Plage🏖️
+        Patricia et Joel vous accueilleront dans une maison de vacance 
+        <br/>idéale de part son confort et l'ensemble de ses avantages.
       </p>
 
       <h4>📍 Idéalement situé</h4>
       <p>
-      <br/> profitez de toutes les commodités et de notre belle plage à 5 min de marche à pied🚶🏻‍♀️
+       Profitez de notre belle plage à 5 min de marche à pied🚶🏻‍♀️
     
-      <br/>que de sa proximité avec tout un tas de commodités!🍽️
+      <br/>ainsi que de sa proximité avec tout un tas de commodités!🍽️
       <br/>Ici le slogan c'est manger, nager🏊🏽‍♀️
       </p>
 
